@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscordMessengerg</title>
+    <link href="style-webhook.css" rel="stylesheet">
+  </head>
+  <body>
+      <main>
+        <div class="window">
+          <div class="window-header">
+            <div class="window-button"></div>
+            <div class="window-button"></div>
+            <div class="window-button" onclick="shutdown()"></div>              
+        </div>
+        <div class="window-body">
+          <h1>KAAZDW</h1>
+          <p>DISCORD Webhook Messenger</p>
+          <p>This page is a form using Webhook tor send message through Discord<br/>
+             Feel free to let me a message below.</p>
+          <form>
+            <input type="text" name="username" id="username" placeholder=" username"><br/>
+            <textarea type="text" name="content" id="content" placeholder=" message"></textarea><br/>
+            <div class="send-buttondiv">
+              <a onClick="reload()">
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='#0E1A27' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'><line x1="15" y1="15" x2="85" y2="85" /> <line x1="85" y1="15" x2="15" y2="85" /></svg>
+              </a> 
+              <button>SEND 
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='#0E1A27' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'><line x1="20" y1="20" x2="20" y2="80"/>
+                <line x1="40" y1="50" x2="85" y2="50"/>
+                <polyline fill="none" points="70,30 85,50 70,70"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+        </div>
+      </main>
+
+        <!-- <section>
+            <div>
+              <h1>KAAZDW</h1>
+              <p>DISCORD Webhook Messenger</p>
+              <form>
+                  <input type="text" name="username" id="username" placeholder=" username"><br/>
+                  <textarea type="text" name="content" id="content" placeholder=" message"></textarea><br/>
+
+                  <button onclick="Send()">Envoyé</button>
+              </form>
+            </div>  
+          </section> -->
+
+  </body>
+  <script>
+    // Connexion();
+    function Connexion() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1022948477442998323/BCx-BiyY71uG8Wdu-ds8N9BA04XwoNXvfPTCzfNmZDXgiY9gjlk5quJWWmdi836BnjLW");
+
+      request.setRequestHeader('Content-type', 'application/json');
+      
+      const params = {
+        username: "AlertConnect",
+        avatar_url: "https://i.pinimg.com/564x/47/77/ae/4777ae0906dd0113ad0bb00d61125d1b.jpg",
+        content: "+1c to DISCORD Webhook Messenger"
+      }
+      request.send(JSON.stringify(params));
+
+    }
+
+
+    function Send() {
+	    var message = document.getElementById("content").value;
+	    var username = document.getElementById("username").value;
+      console.log("username = " + username);
+      console.log("content = " + content);
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1022948477442998323/BCx-BiyY71uG8Wdu-ds8N9BA04XwoNXvfPTCzfNmZDXgiY9gjlk5quJWWmdi836BnjLW");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: username,
+        avatar_url: "https://i.pinimg.com/564x/47/77/ae/4777ae0906dd0113ad0bb00d61125d1b.jpg",
+        content: "MESSAGE : " + message
+      }
+
+      request.send(JSON.stringify(params));
+      if (username.value == "" || message.value == "") alert("Champ vide");//fonctionne pas
+      alert("Message envoyé");
+    }
+
+    function reload(){
+      location.reload()
+    }
+  </script>
+</html>
