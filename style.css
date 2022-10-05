@@ -51,7 +51,6 @@ main{
     border-radius: 5px;
     box-shadow: 0 0 5px 1px rgb(63, 64, 70);
     min-width: 350px;
-
 }
 .terminal-header {
     background: #9c9c9c;
@@ -69,7 +68,6 @@ main{
     border-radius: 50%;
     background-color: white;
 }
-
 .terminal-body {
     color: white;
     font-family: Menlo, Monaco, "Consolas", monospace, "Courier New", "Courier";
@@ -86,8 +84,9 @@ main{
     bottom: 0;
     overflow: hidden;
     overflow-y: scroll;
-
 }
+
+
 @media all and (max-width: 500px) { 
     .terminal-body{
         height: 86  2px;
