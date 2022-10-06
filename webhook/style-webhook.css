@@ -136,7 +136,14 @@ p:nth-child(3){
     font-size: 15px;
     margin-top: 15px;
 }
+@keyframes EnterAnimation {
+    from{
 
+    }
+    to{
+        translate: (1px 0px);
+    }
+}
 @media all and (max-width: 500px) { 
     .terminal-body{
         height: 86  2px;

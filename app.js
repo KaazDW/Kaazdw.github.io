@@ -44,7 +44,7 @@ ttty.initTerminal({
         portfolio: {
             name: "portfolio",
             description: "a way to go on my personnal website",
-            func: ({ print }, argument) => { window.open("https://google.fr", "_blank") }
+            func: ({ print }) => { window.open("https://google.fr", "_blank") }
         },
         dir: {
             name: "dir",
@@ -62,7 +62,12 @@ ttty.initTerminal({
         //     argDescriptions:[""],
         //     func: ({ print }, user, msg) => { Send(user, msg); console.log("open") }
         // }
-
+        webhook: {
+            name: "webhook",
+            description: "a way to go on my webhook discord form",
+            func: ({ print }) => { window.open("webhook/index-webhook.html") }
+        },
+        
 
     }
 });
