@@ -49,12 +49,7 @@ ttty.initTerminal({
         dir: {
             name: "dir",
             description: "a command to display development's informations",
-            func: ({ print }) => { print(">> I build this web terminal with the Mikhail Korolev's API name TTTY, available on his github: https://github.com/mkrl/ttty. For the background i've used a svg background generator.")}
-        },
-        colorchange: {
-            name: "colorchange",
-            description: "a command used to change color mod of the terminal",
-            func: ({ print }) => { print("this web terminal ")}
+            func: ({ print }) => { print(">> I build this web-terminal with the Mikhail Korolev's API name TTTY, available on his github: https://github.com/mkrl/ttty. For the background i've used a svg background generator.")}
         },
         // webhookmsg: {
         //     name: "webhookmsg",
