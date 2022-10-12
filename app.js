@@ -1,21 +1,5 @@
-function Send(user, msg) {
-    var message = msg;
-    var username = user;
-    console.log("username = " + username);
-    console.log("content = " + content);
-    const request = new XMLHttpRequest();
-    request.open("POST", "https://discord.com/api/webhooks/1022948477442998323/BCx-BiyY71uG8Wdu-ds8N9BA04XwoNXvfPTCzfNmZDXgiY9gjlk5quJWWmdi836BnjLW");
 
-    request.setRequestHeader('Content-type', 'application/json');
 
-    const params = {
-        username: username,
-        avatar_url: "https://i.pinimg.com/564x/47/77/ae/4777ae0906dd0113ad0bb00d61125d1b.jpg",
-        content: "MESSAGE : " + message
-    }
-
-    request.send(JSON.stringify(params));
-}
 
 
 ttty.initTerminal({
@@ -67,7 +51,22 @@ ttty.initTerminal({
     }
 });
 
+Connexion();
+function Connexion() {
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1022948477442998323/BCx-BiyY71uG8Wdu-ds8N9BA04XwoNXvfPTCzfNmZDXgiY9gjlk5quJWWmdi836BnjLW");
+  
+    request.setRequestHeader('Content-type', 'application/json');
+    
+    const params = {
+      username: "AlertConnect",
+      avatar_url: "https://i.pinimg.com/564x/47/77/ae/4777ae0906dd0113ad0bb00d61125d1b.jpg",
+      content: "+1c to TERMINALwebsite",
+    }
+    request.send(JSON.stringify(params));
+  
+  }
+  
 function shutdown() {
     window.close();
 }
-
