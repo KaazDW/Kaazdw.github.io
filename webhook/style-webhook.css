@@ -7,9 +7,6 @@
     color: white;
     font-family: Poppins;
 }
-:root{
-
-}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -59,7 +56,7 @@ main{
 .window-button {
     width: 12px;
     height: 12px;
-    margin: 4px -5px 0 0;
+    margin: 1px;
     display: inline-block;
     border-radius: 50%;
     background-color: white;
@@ -80,6 +77,9 @@ main{
     overflow: hidden;
     overflow-y: scroll;
     text-align: center;
+}
+.window-body *{
+    animation: EnterAnimation 2s;
 }
 input, textarea, form, button{
     color: black;
@@ -114,6 +114,9 @@ button svg{
     margin-top: 15px;
     align-items: center;
 }
+.send-buttondiv a {
+    margin-left: 5px;
+}
 .send-buttondiv a svg{
     height: 25px;
     background-color: white;
@@ -122,7 +125,6 @@ button svg{
     border-radius: 5px;
 }
 h1{
-    
     margin-top: 100px;
     letter-spacing: 1px;
     font-size: 35px;
@@ -138,10 +140,10 @@ p:nth-child(3){
 }
 @keyframes EnterAnimation {
     from{
-
+        opacity: 0;
     }
     to{
-        translate: (1px 0px);
+        opacity: 1;
     }
 }
 @media all and (max-width: 500px) { 

@@ -23,6 +23,11 @@
             <input type="text" name="username" id="username" placeholder=" username"><br/>
             <textarea type="text" name="content" id="content" placeholder=" message"></textarea><br/>
             <div class="send-buttondiv">
+              <a onClick="backsite()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5" />
+                </svg>       
+              </a> 
               <a onClick="reload()">
                 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='#0E1A27' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'><line x1="15" y1="15" x2="85" y2="85" /> <line x1="85" y1="15" x2="15" y2="85" /></svg>
               </a> 
@@ -93,6 +98,9 @@
 
     function reload(){
       location.reload()
+    }
+    function backsite() {
+      location.href = "../index.html" 
     }
   </script>
 </html>
