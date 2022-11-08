@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaazDW Terminal</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-button"></div>
+                <div class="terminal-button"></div>
+                <div class="terminal-button" onclick="shutdown()"></div>              
+            </div>
+            <div class="terminal-body">
+                <div id="terminal-api-ttty">
+                </div>
+            </div>
+          </div>
+          
+
+
+    </main>
+    <script src="https://unpkg.com/ttty/dist/ttty.iife.js"></script> <!-- TTTY INIT -->
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
