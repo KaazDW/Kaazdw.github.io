@@ -72,6 +72,7 @@
         content: "+1c to DISCORD Webhook Messenger"
       }
       request.send(JSON.stringify(params));
+	alert("connexion envoyé");
 
     }
 
@@ -91,18 +92,15 @@
         avatar_url: "https://i.pinimg.com/564x/47/77/ae/4777ae0906dd0113ad0bb00d61125d1b.jpg",
         content: "MESSAGE : " + message
       }
-
+	
       request.send(JSON.stringify(params));
-	alert("Message envoyé");
-      if (username.value == "" || message.value == "") alert("Champ vide");//fonctionne pas
       alert("Message envoyé");
     }
-
     function reload(){
-      location.reload()
+      location.reload();
     }
     function backsite() {
-      location.href = "../terminal/index.html" 
+      location.href = "../terminal/index.html" ;
     }
   </script>
 </html>
