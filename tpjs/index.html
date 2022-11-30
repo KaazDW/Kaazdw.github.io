@@ -1,0 +1,84 @@
+ <!-- 
+
+------------------------------------
+    MARCOURT Jean-François 
+    S3G3.2 - 2022-2023
+    obj = Rendu TP d'HTML CSS & JS
+------------------------------------ 
+
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title id="title">TP</title>
+</head>
+<body>
+    <header>
+        <div class="title-div">
+            <h1>BLOG</h1>
+            <a onClick="mobilemenu()">
+                <img src="/img/menu.png" alt="mobileicon">
+            </a>
+        </div>
+        <ul class="nav nonactive" id="nav">
+            <li class="nav-element"><a href="">Accueil</a></li>
+            <li class="nav-element"><a href="/pages/pres.html">Présentation</a></li>
+            <li class="nav-element"><a href="/pages/contact.html">Contact</a></li>
+            <li class="nav-element"><a href="/pages/blog.html">Blog</a>
+                <ul>
+                    <li><a href="/pages/article1.html">Article 1</a></li>
+                    <li><a href="/pages/artcile2.html">Article 2</a></li>
+                    <li><a href="/pages/article3.html">Article 3</a></li>
+                    <li><a href="/pages/article4.html">Article 4</a></li>
+                </ul></li>
+            <li class="nav-element"><a href="/pages/sub.html">Abonnement</a></li>
+            <li class="nav-element"><a href="/pages/stats.html">Satistiques</a></li>
+        </ul>
+    </header>
+    <main class="main-home">
+        <h1 style="display:none">test</h1> <!-- title element for dodge the validator warning-->
+        <section class="main-section-first" id="home">
+            <h2>Bienvenue</h2>
+            <div class="container">
+                <div class="card">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, pariatur!</p>
+                </div>
+                <div class="card">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, pariatur!</p>
+                </div>
+                <div class="card">
+                    <h3>Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, pariatur!</p>
+                </div>
+            </div>
+        </section>
+        <section class="main-section-two">
+        <h3 style="display:none">test</h3><!-- title element for dodge the validator warning-->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta esse suscipit blanditiis libero fugiat quod dicta officiis? Consequatur, asperiores iure ipsam aperiam hic enim labore dolorem nihil! Nostrum, aperiam illo debitis veniam nihil quae eveniet enim dignissimos ipsum dolores quas quibusdam blanditiis id dolor voluptas. Quidem placeat architecto vitae dolores.</p>
+            <img src="https://picsum.photos/800/100" alt="">        
+        </section>   
+
+        <section class="main-section-three">
+        <h3 style="display:none">test</h3><!-- title element for dodge the validator warning-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dolor magni rem aut maiores excepturi debitis sapiente aliquid accusamus quod repellendus aspernatur laudantium eligendi esse! Illum et veritatis consectetur optio quos ab provident libero dignissimos reiciendis amet. Saepe maiores vel ipsum corporis at libero quam harum, mollitia ad magnam quo asperiores architecto numquam nostrum accusantium. Quam, consequuntur dignissimos mollitia, ipsum dolorem ut repudiandae animi, ea error dolore odit cum accusantium voluptates veniam repellat reiciendis sed! Recusandae quas, eum obcaecati non dignissimos aut, optio consequatur accusamus doloremque voluptas necessitatibus dolore eveniet numquam vel quidem, ab voluptatum at. Rerum delectus officiis voluptates!</p>
+            <div>
+                <img src="https://picsum.photos/300/200" alt="">        
+                <img src="https://picsum.photos/300/200" alt="">        
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis magni eaque id ratione libero? Officia fugiat modi itaque mollitia expedita quisquam, temporibus velit iusto labore deleniti? Voluptas explicabo quia voluptate expedita quisquam voluptatem? Ducimus repudiandae nemo velit ex exercitationem pariatur reiciendis similique error, magnam, asperiores possimus porro eveniet dolorem reprehenderit!</p>
+        </section>   
+    </main>
+    <footer>
+        <!-- <h3>footer</h5> -->
+        <p><span class="copyright">© Jean-François MARCOURT</span><br><a href=""> > contact</a><br><a href="">article 1</a> | <a href="">article 2</a> | <a href="">article 3</a></p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
