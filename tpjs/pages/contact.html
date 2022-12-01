@@ -27,7 +27,7 @@
                     <li><a href="article4.html">Article 4</a></li>
                 </ul></li>
             <li class="nav-element"><a href="sub.html">Abonnement</a></li>
-            <li class="nav-element"><a href="stats.html">Satistiques</a></li>
+            <li class="nav-element"><a href="stats.html">Statistiques</a></li>
         </ul>
     </header>
     <main class="main-contact">
@@ -55,46 +55,49 @@
         <p><span class="copyright">© Jean-François MARCOURT</span><br><a href=""> > contact</a><br><a href="">article 1</a> | <a href="">article 2</a> | <a href="">article 3</a></p>
     </footer>
     <script src="../js/app.js"></script>
+    <script>
+        // script hors app.js car erreur si executé dans les pages non concernées
+
+        // TP 4 EXO 1
+        console.log('function exercise 1 apply');
+
+        document.getElementById('msg').style.display = 'none';
+        document.getElementById('msg-label').style.display = 'none';
+
+        document.getElementById('email').addEventListener('change', event => {
+            if (event.target.value != '') {
+                document.getElementById('msg').style.display = 'block';
+                document.getElementById('msg-label').style.display = 'block';
+            } else {
+                document.getElementById('msg').style.display = 'none';
+                document.getElementById('msg-label').style.display = 'none';
+            }
+        })
+
+        
+        // TP 4 EXO 2
+        console.log('function exercise 2 apply');
+
+        var contactbutton = document.getElementById('submit-button-contact');
+        contactbutton.setAttribute('disabled', 'true');
+        contactbutton.style.background = "black";
+        contactbutton.style.color = "grey";
+        contactbutton.style.border = "1px solid grey";
+
+        document.getElementById('form-contact').addEventListener('change', event => {
+            if (
+                document.getElementById('subject').value != ''
+                && document.getElementById('email').value != ''
+                && document.getElementById('name').value != ''
+                && document.getElementById('surname').value != ''
+                && document.getElementById('msg').value != ''
+            ) {
+                document.getElementById('submit-button-contact').removeAttribute('disabled')
+                contactbutton.style.background = "lightblue";
+                contactbutton.style.color = "black";
+                contactbutton.style.border = "1px solid white";
+            }
+        })
+    </script>
 </body>
-<script>
-    // script hors app.js car erreur si executé dans les pages non cercerné 
-
-    // TP 4 EXO 1
-    console.log('function exercise 1 apply');
-
-    document.getElementById('msg').style.display = 'none';
-    document.getElementById('msg-label').style.display = 'none';
-
-    document.getElementById('email').addEventListener('change', event => {
-        if (event.target.value != '') {
-            document.getElementById('msg').style.display = 'block';
-            document.getElementById('msg-label').style.display = 'block';
-        }
-    })
-
-    
-    // TP 4 EXO 2
-    console.log('function exercise 2 apply');
-
-    var contactbutton = document.getElementById('submit-button-contact');
-    contactbutton.setAttribute('disabled', 'true');
-    contactbutton.style.background = "black";
-    contactbutton.style.color = "grey";
-    contactbutton.style.border = "1px solid grey";
-
-    document.getElementById('form-contact').addEventListener('change', event => {
-        if (
-            document.getElementById('subject').value != ''
-            && document.getElementById('email').value != ''
-            && document.getElementById('name').value != ''
-            && document.getElementById('surname').value != ''
-            && document.getElementById('msg').value != ''
-        ) {
-            document.getElementById('submit-button-contact').removeAttribute('disabled')
-            contactbutton.style.background = "lightblue";
-            contactbutton.style.color = "black";
-            contactbutton.style.border = "1px solid white";
-        }
-    })
-</script>
 </html>

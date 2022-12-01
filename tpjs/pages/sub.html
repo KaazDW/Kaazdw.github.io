@@ -27,7 +27,7 @@
                     <li><a href="article4.html">Article 4</a></li>
                 </ul></li>
             <li class="nav-element"><a href="sub.html">Abonnement</a></li>
-            <li class="nav-element"><a href="stats.html">Satistiques</a></li>
+            <li class="nav-element"><a href="stats.html">Statistiques</a></li>
         </ul>
     </header>
     <main class="main-contact">
@@ -95,11 +95,8 @@
             </div>
 
             <label for="photo">Photo</label>
-            <div>
-                <input type="file" accept=".png,.jpg,.gif,.webp" id="photo" name="photo">
-                <!-- <p id="pict-error"></p>-->
-                <!-- pas de gestion d'erreur car pas obligatoire -->
-            </div>
+            <input type="file" accept=".png,.jpg,.gif,.webp" id="photo" name="photo">
+            <!-- pas de gestion d'erreur car pas obligatoire -->
 
             <label for="loisir">Loisirs (CTRL + CLIC pour selection multiple)</label>
             <div>
@@ -115,17 +112,13 @@
                         <option value="violon" disabled>Violon</option>
                     </optgroup>
                 </select>
-                <p class="obligatoire"></p>
             </div>
 
             <label for="cpref">Couleur préféré</label>
-            <div>
-                <input type="color" id="cpref" name="cpref">
-                <p class="obligatoire"></p>
-            </div>
+            <input type="color" id="cpref" name="cpref">
 
-            <a onclick="subsubmit()" class="button">Envoyé</a>
-            <!-- <button type="submit" onclick="subsubmit()">Envoyé</button> -->
+            <!-- <a onclick="subsubmit()" class="button">Envoyé</a> -->
+            <button class="button" id="btn" type="submit" onclick="subsubmit()">Envoyé</button>
         </form>
     </main>
     <footer>
@@ -144,6 +137,8 @@
         var post = document.getElementById('post-error');
         var code = document.getElementById('code-error');
         var ville = document.getElementById('city-error');
+
+        var btn = document.getElementById('btn');
 
         function containsNumbers(str) {
             return /[0-9]/.test(str);
@@ -207,6 +202,8 @@
             } else{
                 ville.innerHTML = '';
             }
+
+            event.preventDefault(); //desactive le redirect du button pour laisser la verification statique du form s'effectuer
         }
     </script>
 </body>

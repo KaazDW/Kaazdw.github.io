@@ -24,8 +24,6 @@
     --hover-color: rgb(36, 36, 36);
     --border-color: rgb(30 41 59/.5);
     --header-color: rgb(18 24 29/.6);
-
-
 }
 body{
     background-color: #000;
@@ -83,15 +81,11 @@ body{
                 a:hover{
                     background-color: var(--hover-color);
                     border: 1px solid var(--border-color);
-
                 }
             }
             li:hover > ul, ul li:hover{
                 visibility: visible;
             }
-            // li ul{
-            //     display : none;
-            // }
         }
     }
     main{
@@ -148,8 +142,6 @@ body{
         }
     }
     .main-article{
-        // display: flex;
-        // justify-content: center;
         div.top-article{
             text-align: center;
             margin-bottom: 80px;
@@ -245,7 +237,6 @@ body{
             }
             text-area{
                 width: 150vw;
-
             }
             p{
                 color: white;
@@ -440,9 +431,6 @@ body{
     0%{
         transform: rotateX(0deg);    
     }
-    // 90%{
-    //     transform: rotate(90deg);    
-    // }
     100%{
         transform: rotateX(360deg);    
     }
@@ -491,7 +479,6 @@ body{
         main, footer{
             width: 90vw;
             margin: auto;
-            // padding-top: 370px;
         }
         .main-home{
             section.main-section-first{
@@ -519,8 +506,6 @@ body{
             }
         }
         .main-article{
-            // display: flex;
-            // justify-content: center;
             div.top-article{
                 text-align: center;
                 margin-bottom: 80px;
