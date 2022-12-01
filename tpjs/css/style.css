@@ -155,27 +155,27 @@ body .main-article section.aside-article {
   display: flex;
   width: 45vw;
 }
-body .main-article section.aside-article .aside {
+body .main-article section.aside-article aside {
   width: 25%;
   height: 500px;
   background-color: var(--header-color);
   border: 1px solid var(--border-color);
   border-radius: 5px;
 }
-body .main-article section.aside-article .aside h3 {
+body .main-article section.aside-article aside h3 {
   margin-left: 10px;
   margin-top: 13px;
 }
-body .main-article section.aside-article .aside ul {
+body .main-article section.aside-article aside ul {
   margin-left: 25px;
 }
-body .main-article section.aside-article .content {
+body .main-article section.aside-article article {
   width: 71%;
   height: 500px;
   margin-left: 4%;
   text-align: center;
 }
-body .main-article section.aside-article .content img {
+body .main-article section.aside-article article img {
   margin: 20px 0px;
   border-radius: 5px;
   width: 30vw;

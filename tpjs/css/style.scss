@@ -163,7 +163,7 @@ body{
         section.aside-article{
             display: flex;
             width: 45vw;
-            .aside{
+            aside{
                 width: 25%;
                 height: 500px;
                 background-color: var(--header-color);
@@ -177,7 +177,7 @@ body{
                     margin-left: 25px;
                 }
             }
-            .content{
+            article{
                 width: 71%;
                 height: 500px;
                 margin-left: 4%;
