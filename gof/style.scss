@@ -1,0 +1,156 @@
+/* 
+---------------------------------
+    : KAAZDW
+---------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/*
+font-family: 'Comfortaa', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+:root{
+    --color-background: #222;
+    --color-element: #444;
+}
+*{
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+    }
+    ul{
+        // list-style: none;
+    }
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+    color: white;
+    main#display-start{
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        height: 100vh;
+        margin-top: -150px;
+        div{
+            border: 1px solid var(--color-element);
+            padding: 25px;
+            text-align: center;
+            h1{
+                margin-bottom: 25px;
+            }
+            a{
+                background-color: rgb(180, 51, 51);
+                padding: 15px 20px;
+                border-radius: 5px;
+                user-select: none;
+                cursor: pointer;
+                transition: ease-in-out .3s;
+            }
+            a:hover{
+                background-color: rgb(123, 10, 10);
+            }
+            p{
+                margin: 25px;
+                color: rgb(188, 188, 188);
+                font-style: italic;
+                span{
+                    font-style: normal;
+                }
+            }
+            small{
+                color: grey;
+            }
+        }
+    }
+    main#display-game{
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: -150px;
+        section{
+            div:nth-child(1){
+                margin-bottom: 25px;
+                p:nth-child(1){
+                    color: red;
+                }
+                h3{
+                    margin-top: 25px;
+                }
+                .gay{
+                    // text-decoration: underline;
+                    // text-align: center;
+                }
+            }
+            div:nth-child(2){
+                ul{
+                    li{
+                        margin: 15px 0px;
+                        span{
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            border-bottom: 1px solid white;
+                            margin: 0px 10px;
+                        }
+                        .zip{
+                            background-color: rgb(180, 51, 51);
+                            border: none;
+                            padding: 5px;
+                            border-radius: 5px;
+                            margin: 0 2px;
+                        }
+                    }
+                }
+            }
+            div.done{
+                text-align: center;
+                margin-top: 35px;
+                a{
+                    background-color: rgb(180, 51, 51);
+                    padding: 8px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: ease-in-out .3s;
+                }
+                a:hover{
+                    background-color: rgb(123, 10, 10);
+                }
+            }
+        }
+    }
+    #display-done{
+        width: 100%;
+        section{
+            margin: auto;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                border: 3px solid red;
+                h2{
+                    font-size: 35px;;
+                    margin: 0 15px;
+                    span:nth-child(1){
+                        color: yellow;
+                    }
+                    span:nth-child(2){
+                        color: blue;
+                    }
+                    span:nth-child(3){
+                        color: green;
+                    }
+                    span:nth-child(4){
+                        color: plum;
+                    }
+                    span:nth-child(5){
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
