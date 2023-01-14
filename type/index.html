@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k.TabFiller</title>
+    <link href="css/tabG.css" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <h2>k.tool > <a href="https://github.com/KaazDW/k.TabFiller" target="_blank">JS tabFiller</a></h2>
+        <p>Made by <a href="https://github.com/KaazDW"  target="_blank">KaazDW</a> for <a href="https://github.com/KaazDW/k.TypingTest" target="_blank">k.TypingTest</a> developement</p>
+        <p class="explain">
+            Write the content you want to have or add into your table below, then copy the code and add it into your project.
+        </p>
+        <button class="tooltip" onclick="add()" type="button">
+            💬
+            <span class="tooltiptext" id="myTooltip">Press 'Enter' key for apply</span>
+        </button>
+        <input id="textinput" placeholder="Write your word then press 'Enter'" autocomplete="off"></input>
+        <p id="displaytab" contenteditable="true">Your table's code will be display here</p>
+    </main>
+    <script src="tabG.js"></script>
+</body>
+</html>
